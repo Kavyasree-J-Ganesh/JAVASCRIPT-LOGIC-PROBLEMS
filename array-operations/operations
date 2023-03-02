@@ -1,0 +1,54 @@
+// array operations
+
+// 1. toString() method  => it converts array to string(coma separated values)
+const fruits = ["Banana", "Apple", "Mango", "Orange"];
+console.log(fruits.toString());
+
+
+// 2.join()   => join all array elements into string
+const fruit = ["Banana", "Apple", "Mango", "Orange"];
+console.log(fruit.join(" * "));
+
+
+// 3. array pop()  => it removes the last elements from an array  and return the value that popped out
+const veg = ["Tomamto", "Potato", "Onion", "Chilli"];
+veg.pop();
+console.log(veg);
+
+
+// 4. array push()  => it add a new element in the end of the array and returns the new array length
+const animals = ["Dog", "Cat", "Cow", "Elephant"];
+animals.push("Horse")
+console.log(animals);
+
+
+// 5. array shift()  => it removes the first array elements and returns the value that was shifted out
+const birds = ["Peacock", "Crow", "Hen", "Parrot"];
+birds.shift();
+console.log(birds);
+
+
+// 6. array unshift()  => it add a new element to an array at the beginning and returns the new array length
+const color = ["Black", "White", "Red", "Pink"];
+color.unshift("Blue");
+console.log(color);
+
+
+// 7. array merging (concatenating)  => creats new array by merging existing array
+const bird = ["Hen", "Peacock", "parrot"];
+const animal = ["Dog", "Cat", "Sheep"];
+const living = bird.concat(animal);
+console.log(living);
+
+
+// 8. array Slice()  => it slice out a piece of array into new array and didn't modify existing array
+const cars = ["Ford", "Suzuki", "BMW", "Volkswagen", "Volvo", "Porsche"];
+const car = cars.slice(2,5);
+console.log(car);
+
+
+// 9. array splice()  => it helps to add and/or remove elements
+// first argument is start index and second argument is number of elements to be removed
+const vegetables = ["Tomato", "Chilli", "Cabbage", "Corn", "Brinjal"];
+vegetables.splice(2,2,"Potato","Onion");
+console.log(vegetables);
